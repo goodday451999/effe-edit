@@ -208,6 +208,50 @@
         }
     }
 
+    
+    @media (min-width: 1250px) {
+        #screen1 {
+            background: url('images/effe/crowd2.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+    @media (min-width: 1250px) {
+        #screen2 {
+            background: url('images/effe/bg.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+    @media (min-width: 1250px) {
+        #screen3 {
+            background: url('images/effe/bg2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    @media (max-width: 1250px) {
+        #screen1 {
+            background: url('images/effe/bg2_effe.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+    @media (max-width: 1250px) {
+        #screen2 {
+            background: url('images/effe/bg_effe.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+    @media (max-width: 1250px) {
+        #screen3 {
+            background: url('images/effe/bg3_effe.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+
   </style>
     <style>
     #particles canvas{
@@ -298,7 +342,7 @@
     <!-- <canvas class="fireworks"> -->
     <div class="swiper-container hero-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" data-date="2018/10/04" style="background: url('images/effe/crowd2.jpg') no-repeat">
+            <div class="swiper-slide" id="screen1" data-date="2018/10/04">
                 <div class="hero-content">
 
                     <div class="container">
@@ -340,7 +384,7 @@
                 </div><!-- .swiper-slide -->
             </div><!-- .swiper-wrapper -->
 
-            <div class="swiper-slide" data-date="2018/10/04" style="background: url('images/effe/bg.png') no-repeat">
+            <div class="swiper-slide" id="screen2" data-date="2018/10/04">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
@@ -381,7 +425,7 @@
                 </div><!-- .swiper-slide -->
             </div><!-- .swiper-wrapper -->
 
-            <div class="swiper-slide" data-date="2018/10/04" style="background: url('images/effe/bg2.jpg'); background-size: cover">
+            <div class="swiper-slide" id="screen3" data-date="2018/10/04">
                 <div class="hero-content">
                     <div class="container">
                         <div class="row">
