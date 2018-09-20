@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events</title>
+  <link href="css/sequence-theme.pop-slide.css" rel="stylesheet" media="all">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="scripts/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div id="sequence" class="seq">
+
+    <div class="seq-screen">
+      <ul class="seq-canvas">
+
+        <li class="seq-step1 seq-in" style="background-image:url('images/mainstage.jpg')">
+          <div data-seq class="seq-title">
+            <h2>Bringing the very best of celebrities, right on the stage!</h2>
+            <a class="seq-button" href="mainstage.html">View Now ></a>
+            <a class="seq-button" href="mainstage.html">View Now ></a>
+          </div>
+
+          <!-- <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5709923096">Kmeron</a></small> -->
+        </li>
+
+        <li class="seq-step2" style="background-image:url('images/informal.jpg')">
+          <div data-seq class="seq-title">
+            <h2>Let yourself loose, and bring out your inner spirit.</h2>
+            <a class="seq-button" href="informal.html">View Now ></a>
+          </div>
+
+          <!-- <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/4904378820">Kmeron</a></small> -->
+        </li>
+
+        <li class="seq-step3" style="background-image:url('images/society.jpg')">
+          <div data-seq class="seq-title">
+            <h2>Get a flavour of different societies that make up the life of this fest!</h2>
+            <a class="seq-button" href="../comingsoon.html">View Now ></a>
+          </div>
+
+          <!-- <small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/4202305377">Kmeron</a></small> -->
+        </li>
+
+
+        
+      </ul>
+    </div>
+
+    <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+      <li><a href="#step1" rel="step1" title="Go to slide 1">Mainstage Events</a></li>
+      <li><a href="#step2" rel="step2" title="Go to slide 2">Informal Events</a></li>
+      <li><a href="#step3" rel="step3" title="Go to slide 3">Society Events</a></li>
+      <!-- <li><a href="#step5" rel="step5" title="Go to slide 5">Godspeed You! Black Emperor</a></li> -->
+    </ul>
+  </div>
+
+  <script src="scripts/imagesloaded.pkgd.min.js"></script>
+  <script src="scripts/hammer.min.js"></script>
+  <script src="scripts/sequence.min.js"></script>
+  <script src="scripts/sequence-theme.pop-slide.js"></script>
+</body>
+</html>
