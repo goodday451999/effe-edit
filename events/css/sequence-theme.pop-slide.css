@@ -410,3 +410,19 @@ html,
   cursor: pointer;
 }
 
+.back-btn{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 1000;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+  .back-btn{
+    display: none;
+  }
+}
+
