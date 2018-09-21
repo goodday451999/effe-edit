@@ -188,11 +188,13 @@ html,
   color: white;
   font-size: 14px;
   border: 2px solid white;
+  background-image: url('../images/theater.jpg');
+  background-position: 0%;
 }
 
 .seq .seq-title h2 {
   margin: .6em 0 .4em 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Nunito', sans-serif;  
   font-size: 0.75em;
 }
 
@@ -227,6 +229,7 @@ html,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  opacity: 0.8;
 }
 
 .seq.seq-active .seq-title {
@@ -281,7 +284,7 @@ html,
     line-height: 1.4;
     font-size: 16px;
     font-weight: bold;
-    background: #512A5E;
+    background: rgb(32, 18, 37);
     color: white;
     -webkit-transition-duration: .35s;
     transition-duration: .35s;
