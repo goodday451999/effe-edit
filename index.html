@@ -208,6 +208,12 @@
         }
     }
 
+    @media (min-width: 320px) and (max-width:768px){
+      .loader {
+        display: none;
+        visibility: hidden;
+      }
+    }
 
     @media (min-width: 1250px) {
         #screen1 {
@@ -266,7 +272,13 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
     <script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
     $(window).load(function() { // makes sure the whole site is loaded
     $("#loader").delay(500).fadeOut("slow"); // will fade out the white DIV that covers the website.
     // $("#loader").delay(500).remove();
@@ -322,9 +334,9 @@
 
                         <ul>
                           <li><a href="/">Home</a></li>
-                          <li><a href="/comingsoon.html">Proshows</a></li>
-                          <li><a href="https://drive.google.com/file/d/12Am-pLq-a10RYhNLxnS-sszx2p5SLwXk/view?ts=5b9bea8b" target="_blank">Events</a></li>
-                          <li><a href="/comingsoon.html">Sponsors</a></li>
+                          <li><a href="#proshows">Proshows</a></li>
+                          <li><a href="#events">Events</a></li>
+                          <li><a href="#sponsors">Sponsors</a></li>
                           <li><a href="/contact.html">Contact</a></li>
                         </ul>
                     </nav><!-- .site-navigation -->
@@ -616,7 +628,7 @@
         </div>
     </div>
 </div>
-<div class="homepage-next-events">
+<div id="proshows" class="homepage-next-events">
     <div class="container">
         <div class="row">
             <div class="next-events-section-header">
@@ -754,7 +766,7 @@
         </div>
     </div>
 </div>
-<div class="homepage-regional-events">
+<div id="events" class="homepage-regional-events">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -790,7 +802,7 @@
                             <figure>
                                 <img src="images/effe/bindass.jpg" alt="">
 
-                                <a class="event-overlay-link flex justify-content-center align-items-center" href="#">+</a>
+                                <a class="event-overlay-link flex justify-content-center align-items-center" href="/bindassbol.html">+</a>
                             </figure><!-- .hero-image -->
 
                             <div class="entry-header">
@@ -893,7 +905,7 @@
                     </div>
                 </div><!-- .swiper-container -->
 
-                <div class="events-partners">
+                <div id="sponsors" class="events-partners">
                     <header class="entry-header">
                         <h2 class="entry-title" id="#sponsors">Past Sponsors</h2>
                     </header>
