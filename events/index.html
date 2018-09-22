@@ -69,9 +69,23 @@
     </ul>
   </div>
 
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/jquery.lazy.min.js"></script>
+  <script>
+
+    jQuery(document).ready(function($){
+
+    $('.seq-canvas').Lazy();
+
+    });
+    $(function(){
+      $('.seq-canvas').Lazy();
+    });
+  </script>
   <script src="scripts/imagesloaded.pkgd.min.js"></script>
   <script src="scripts/hammer.min.js"></script>
   <script src="scripts/sequence.min.js"></script>
   <script src="scripts/sequence-theme.pop-slide.js"></script>
+ 
 </body>
 </html>
