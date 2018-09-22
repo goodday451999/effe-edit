@@ -124,7 +124,7 @@ a:hover, a:active {
 --------------------------------*/
 .header-bar {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     z-index: 99;
     width: 100%;
@@ -502,6 +502,12 @@ a:hover, a:active {
     padding-right: 30px;
 }
 
+@media only screen and (max-width: 700px) {
+  .homepage-info-section figure {
+      padding-right: 0;
+  }
+}
+
 .homepage-info-section figure img {
     max-width: 100%;
 }
@@ -511,6 +517,7 @@ a:hover, a:active {
     font-weight: bold;
     line-height: 1;
     color: #232127;
+    text-align: center;
 }
 
 .homepage-info-section .entry-content {
@@ -556,7 +563,7 @@ a:hover, a:active {
     position: absolute;
     left: 18px;
     bottom: 24px;
-    z-index: 99;
+    z-index: 0;
 }
 
 .homepage-featured-events .event-content-wrap .entry-header .entry-title {
@@ -996,6 +1003,8 @@ a:hover, a:active {
     min-width: 220px;
     margin-top: 80px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*--------------------------------------------------------------
@@ -2191,7 +2200,7 @@ ul.tabs-nav .tab-nav.active {
     transition: .5s ease;
     backface-visibility: hidden;
   }
-  
+
   .middle {
     transition: .5s ease;
     opacity: 0;
@@ -2202,15 +2211,15 @@ ul.tabs-nav .tab-nav.active {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  
+
   figure:hover .image {
     opacity: 0.3;
   }
-  
+
   figure:hover .middle {
     opacity: 1;
   }
-  
+
   .text {
     /* background-color: #4CAF50; */
     color: black;
