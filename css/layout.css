@@ -409,3 +409,8 @@ body{
     font-size: 50px!important;
     color: #9a28d7!important;
   }
+  @media only screen and (max-width: 768px) {
+    .modal {
+      top: 10%!important;
+    }
+  }
