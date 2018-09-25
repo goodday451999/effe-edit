@@ -409,22 +409,8 @@ body{
     font-size: 50px!important;
     color: #9a28d7!important;
   }
-
-  .tooltiptext {
-    visibility: hidden;
-    background-color: rgba(0,0,0,.7);
-    color: #fff;
-    width: -webkit-fill-available;
-    text-align: -webkit-left;
-    padding: 8px;
-    position: absolute;
-    top: -80px;
-    font-size: 16px;
-    word-spacing: 1px;
-    left: 0;
-    z-index: 1;
-  }
-
-  .plus-event:hover .tooltiptext {
-      visibility: visible;
+  @media only screen and (max-width: 768px) {
+    .modal {
+      top: 10%!important;
+    }
   }

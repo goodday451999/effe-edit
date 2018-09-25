@@ -15,6 +15,7 @@
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
@@ -132,21 +133,33 @@ $(function () {
               <p class="text">
 
 
-              <i class="fa fa-plus plus-event" aria-hidden="true">
-                <span class="tooltiptext">
-                  Bollywood is a religion and the devotees are plenty. Get ready for whats in store this year as the legacy from Daler Mehandi, Sona Mahapatra, Neha Kakkar to Benny Dayal follows.
-                </span>
-              </i>
-
-
-
+              <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal" aria-hidden="true"></i>
               </p>
 						</div>
 						<div class="label-bg"></div>
 					</div>
 				</div>
 			</div>
+      <!--modal-->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content" style="border-radius:0!important">
 
+              <!-- Modal Header -->
+              <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Celeb Night</h4>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                <img src="events/images/farhan.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                Bollywood is a religion and the devotees are plenty. Get ready for whats in store this year as the legacy from Daler Mehandi, Sona Mahapatra, Neha Kakkar to Benny Dayal follows.
+              </div>
+            </div>
+          </div>
+        </div>
+      <!--modal-->
 					<div class="portfolio mainstage all" data-cat="mainstage">
 							<div class="portfolio-wrapper">
 									<div class="image">
@@ -159,13 +172,7 @@ $(function () {
                     <p class="text">
 
 
-                      <i class="fa fa-plus plus-event" aria-hidden="true">
-                        <span class="tooltiptext">
-                          Laughter has always been the best medicine. Make your days less gloomy and your life a little happier. Come join us this autumn where we introduce the Humour Night.
-                        </span>
-                      </i>
-
-
+                      <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal2" aria-hidden="true"></i>
 
                     </p>
 									</div>
@@ -173,7 +180,26 @@ $(function () {
 								</div>
 							</div>
 						</div>
+            <!--modal-->
+              <div class="modal" id="myModal2">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="border-radius:0!important">
 
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Humour Night</h4>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                      <img src="events/images/humour.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                      Laughter has always been the best medicine. Make your days less gloomy and your life a little happier. Come join us this autumn where we introduce the Humour Night.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--modal-->
 							<div class="portfolio informal all" data-cat="informal">
 									<div class="portfolio-wrapper" id="wrapper">
 										<div class="image">
@@ -185,14 +211,7 @@ $(function () {
 												<span class="text-category">Informal</span>
                         <p class="text">
 
-
-                          <i class="fa fa-plus plus-event" aria-hidden="true">
-                            <span class="tooltiptext">
-                              Treasure Hunt is just a name given to a scheduled opportunity to do what God wants us doing all the time – exploring our surroundings and trying to find our paths by the clues life gives out.
-                            </span>
-                          </i>
-
-
+                          <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal3" aria-hidden="true"></i>
 
                         </p>
 
@@ -201,6 +220,28 @@ $(function () {
 										</div>
 									</div>
 								</div>
+
+                <!--modal-->
+                  <div class="modal" id="myModal3">
+                    <div class="modal-dialog">
+                      <div class="modal-content" style="border-radius:0!important">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Treasure Hunt</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                          <img src="events/images/treasure-hunt.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                          Treasure Hunt is just a name given to a scheduled opportunity to do what God wants us doing all the time – exploring our surroundings and trying to find our paths by the clues life gives out.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--modal-->
+
 								<div class="portfolio informal all" data-cat="informal">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -213,22 +254,38 @@ $(function () {
                   <p class="text">
 
 
-                          <i class="fa fa-plus plus-event" aria-hidden="true">
-                            <span class="tooltiptext">
-                              This event consists of a competition of popular Android Games like Mini Militia, Bomb Squad
-                              and there are two types of entries namely Individual and Team entries.
-                            </span>
-                          </i>
+                          <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal4" aria-hidden="true"></i>
 
+                        </p>
 
-
-                  </p>
-
+											</div>
+											<div class="label-bg"></div>
+										</div>
 									</div>
-								<div class="label-bg"></div>
 								</div>
-								</div>
-							</div>
+
+                <!--modal-->
+                  <div class="modal" id="myModal4">
+                    <div class="modal-dialog">
+                      <div class="modal-content" style="border-radius:0!important">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Android Gamer's Asylum</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                          <img src="events/images/android.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                          This event consists of a competition of popular Android Games like Mini Militia, Bomb Squad
+                          and there are two types of entries namely Individual and Team entries.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--modal-->
+
 							<div class="portfolio mainstage all" data-cat="mainstage">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -241,21 +298,36 @@ $(function () {
                   <p class="text">
 
 
-                          <i class="fa fa-plus plus-event" aria-hidden="true">
-                            <span class="tooltiptext">
-                              The rage of today-128 BPM big room rage stuff from the likes of Tieso, Hardwell, Martin Garrix and so on. Performed under SunBurn by renowned artist such as AceAxe, SickLead and more in the past, guess what lies ahead!
-                            </span>
-                          </i>
+                          <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal5" aria-hidden="true"></i>
 
+                        </p>
 
-
-                  </p>
-
+											</div>
+											<div class="label-bg"></div>
+										</div>
 									</div>
-								<div class="label-bg"></div>
 								</div>
-								</div>
-							</div>
+
+                <!--modal-->
+                  <div class="modal" id="myModal5">
+                    <div class="modal-dialog">
+                      <div class="modal-content" style="border-radius:0!important">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">EDM</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                          <img src="events/images/edm.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                          The rage of today-128 BPM big room rage stuff from the likes of Tieso, Hardwell, Martin Garrix and so on. Performed under SunBurn by renowned artist such as AceAxe, SickLead and more in the past, guess what lies ahead!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--modal-->
 							<div class="portfolio mainstage all" data-cat="mainstage">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -268,19 +340,39 @@ $(function () {
                   <p class="text">
 
 
-                            <i class="fa fa-plus plus-event" aria-hidden="true">
-                              <span class="tooltiptext">
-                                none!
-                              </span>
-                            </i>
 
-                  </p>
+                            <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal6" aria-hidden="true"></i>
 
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+
+                          </p>
+
+  											</div>
+  											<div class="label-bg"></div>
+  										</div>
+  									</div>
+  								</div>
+
+                  <!--modal-->
+                    <div class="modal" id="myModal6">
+                      <div class="modal-dialog">
+                        <div class="modal-content" style="border-radius:0!important">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Kavyom</h4>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                            <img src="events/images/kavyom.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                            none!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!--modal-->
+
 							<div class="portfolio society all" data-cat="society">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -293,21 +385,39 @@ $(function () {
                   <p class="text">
 
 
-                          <i class="fa fa-plus plus-event" aria-hidden="true">
-                            <span class="tooltiptext">
-                              comming soon!
-                            </span>
-                          </i>
+
+                          <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal7" aria-hidden="true"></i>
 
 
+                        </p>
 
-                  </p>
-
+											</div>
+											<div class="label-bg"></div>
+										</div>
 									</div>
-								<div class="label-bg"></div>
 								</div>
-								</div>
-							</div>
+
+                <!--modal-->
+                  <div class="modal" id="myModal7">
+                    <div class="modal-dialog">
+                      <div class="modal-content" style="border-radius:0!important">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Society Events</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                          <img src="events/images/comingsoon.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                            comming soon!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--modal-->
+
 							<div class="portfolio mainstage all" data-cat="mainstage">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -320,21 +430,38 @@ $(function () {
                   <p class="text">
 
 
-                              <i class="fa fa-plus plus-event" aria-hidden="true">
-                                <span class="tooltiptext">
-                                  no text!
-                                </span>
-                              </i>
+                              <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal8" aria-hidden="true"></i>
 
 
+                            </p>
 
-                  </p>
+    											</div>
+    											<div class="label-bg"></div>
+    										</div>
+    									</div>
+    								</div>
 
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+                    <!--modal-->
+                      <div class="modal" id="myModal8">
+                        <div class="modal-dialog">
+                          <div class="modal-content" style="border-radius:0!important">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Horizon</h4>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                              <img src="events/images/horizon.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                              no text!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--modal-->
+
 							<div class="portfolio informal all"  data-cat="informal">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -347,24 +474,42 @@ $(function () {
                   <p class="text">
 
 
-                          <i class="fa fa-plus plus-event" aria-hidden="true">
-                            <span class="tooltiptext">
-                              It takes a lot of effort to find twenty players and large spaces to enjoy a game of football.
-                              Ninety minutes, though, is even  more of a problem. Test your real life football skills and motor
-                              skill-mojo in this five-a-side, small area, short time version of football. It doesn’t get any better
-                              than this! Viva la futsal!
 
-                            </span>
-                          </i>
+                          <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal9" aria-hidden="true"></i>
 
 
+                        </p>
 
-                  </p>
+											</div>
+											<div class="label-bg"></div>
+										</div>
 									</div>
-								<div class="label-bg"></div>
 								</div>
-								</div>
-							</div>
+
+                <!--modal-->
+                  <div class="modal" id="myModal9">
+                    <div class="modal-dialog">
+                      <div class="modal-content" style="border-radius:0!important">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Futsal</h4>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                          <img src="events/images/futsal.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                          It takes a lot of effort to find twenty players and large spaces to enjoy a game of football.
+                          Ninety minutes, though, is even  more of a problem. Test your real life football skills and motor
+                          skill-mojo in this five-a-side, small area, short time version of football. It doesn’t get any better
+                          than this! Viva la futsal!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!--modal-->
+
 							<div class="portfolio informal all" data-cat="informal">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -377,20 +522,39 @@ $(function () {
                   <p class="text">
 
 
-                            <i class="fa fa-plus plus-event" aria-hidden="true">
-                              <span class="tooltiptext">
-                                none!
-                              </span>
-                            </i>
+
+                            <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal10" aria-hidden="true"></i>
 
 
+                          </p>
 
-                  </p>
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+  											</div>
+  											<div class="label-bg"></div>
+  										</div>
+  									</div>
+  								</div>
+
+                  <!--modal-->
+                    <div class="modal" id="myModal10">
+                      <div class="modal-dialog">
+                        <div class="modal-content" style="border-radius:0!important">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Pictionary</h4>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                            <img src="events/images/pictionary.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                            none!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!--modal-->
+
 							<div class="portfolio informal all" data-cat="informal">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -402,21 +566,38 @@ $(function () {
 									<span class="text-category">Informal</span>
                   <p class="text">
 
-
-                            <i class="fa fa-plus plus-event" aria-hidden="true">
-                              <span class="tooltiptext">
-                                A good TV show is what makes the boring routine life of a student seem a little easier. Just a glimmer of hope of being able to watch our favourite TV series helps us get along the day.All those hours spent watching various tv shows were finally put to some good use in the form of the “TV series quiz” this Effervescence.
-                              </span>
-                            </i>
+                            <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal11" aria-hidden="true"></i>
 
 
+                          </p>
 
-                  </p>
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+  											</div>
+  											<div class="label-bg"></div>
+  										</div>
+  									</div>
+  								</div>
+
+                  <!--modal-->
+                    <div class="modal" id="myModal11">
+                      <div class="modal-dialog">
+                        <div class="modal-content" style="border-radius:0!important">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header" style="display: block!important">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">TV Series Quiz</h4>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                            <img src="events/images/tv.png" style="width: 100%" onclick="void(0)" alt="" />
+                              A good TV show is what makes the boring routine life of a student seem a little easier. Just a glimmer of hope of being able to watch our favourite TV series helps us get along the day.All those hours spent watching various tv shows were finally put to some good use in the form of the “TV series quiz” this Effervescence.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!--modal-->
+
 							<div class="portfolio informal all"  data-cat="informal">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -429,21 +610,40 @@ $(function () {
                   <p class="text">
 
 
-                              <i class="fa fa-plus plus-event" aria-hidden="true">
-                                <span class="tooltiptext">
-                                  Many of us have a lover inside of us who has never dared to explode. Well , let the cupid strike
-                                  your heart ,have a date to spend some time with and then well, who knows what can happen.
-                                </span>
-                              </i>
+
+                              <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal12" aria-hidden="true"></i>
 
 
+                            </p>
 
-                  </p>
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+    											</div>
+    											<div class="label-bg"></div>
+    										</div>
+    									</div>
+    								</div>
+
+                    <!--modal-->
+                      <div class="modal" id="myModal12">
+                        <div class="modal-dialog">
+                          <div class="modal-content" style="border-radius:0!important">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Blind Date</h4>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                              <img src="events/images/blind-date.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                              Many of us have a lover inside of us who has never dared to explode. Well , let the cupid strike
+                              your heart ,have a date to spend some time with and then well, who knows what can happen.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--modal-->
+
               <div class="portfolio informal all"  data-cat="informal">
 									<div class="portfolio-wrapper">
 											<div class="image">
@@ -455,23 +655,39 @@ $(function () {
 									<span class="text-category">Informal</span>
                   <p class="text">
 
-
-                              <i class="fa fa-plus plus-event" aria-hidden="true">
-                                <span class="tooltiptext">
-                                  If you are obsessed with getting yourself clicked, then we present the Photo Booth for you
-                                  where you can have your pictures taken with props and all the dreamworks of a carnival
-                                  presented just for you! Enter Pose and Click!
-                                </span>
-                              </i>
+                              <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal13" aria-hidden="true"></i>
 
 
+                            </p>
 
-                  </p>
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+    											</div>
+    											<div class="label-bg"></div>
+    										</div>
+    									</div>
+    								</div>
+
+                    <!--modal-->
+                      <div class="modal" id="myModal13">
+                        <div class="modal-dialog">
+                          <div class="modal-content" style="border-radius:0!important">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Photo Booth</h4>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                              <img src="events/images/photo-booth.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                              If you are obsessed with getting yourself clicked, then we present the Photo Booth for you
+                              where you can have your pictures taken with props and all the dreamworks of a carnival
+                              presented just for you! Enter Pose and Click!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--modal-->
 
               <div class="portfolio informal all"  data-cat="informal">
 									<div class="portfolio-wrapper">
@@ -485,23 +701,40 @@ $(function () {
                   <p class="text">
 
 
-                              <i class="fa fa-plus plus-event" aria-hidden="true">
-                                <span class="tooltiptext">
-                                  The food that is our very own , something we as Indians love almost inherently, Panipuri. The
-                                  Panipuri Junction gives you an opportunity to show your love for the food with the simplest of
-                                  competitions. Eat as many golgappas as you want in a minute without having to pay for it and
-                                  may be win something out of it. Best Competition Ever,Eh?
-                                </span>
-                              </i>
+                              <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal14" aria-hidden="true"></i>
 
 
+                            </p>
 
-                  </p>
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+    											</div>
+    											<div class="label-bg"></div>
+    										</div>
+    									</div>
+    								</div>
+
+                    <!--modal-->
+                      <div class="modal" id="myModal14">
+                        <div class="modal-dialog">
+                          <div class="modal-content" style="border-radius:0!important">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Panipuri Junction</h4>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                              <img src="events/images/panipuri.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                              The food that is our very own , something we as Indians love almost inherently, Panipuri. The
+                              Panipuri Junction gives you an opportunity to show your love for the food with the simplest of
+                              competitions. Eat as many golgappas as you want in a minute without having to pay for it and
+                              may be win something out of it. Best Competition Ever,Eh?
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--modal-->
 
               <div class="portfolio informal all"  data-cat="informal">
 									<div class="portfolio-wrapper">
@@ -514,23 +747,39 @@ $(function () {
 									<span class="text-category">Informal</span>
                   <p class="text">
 
-
-                            <i class="fa fa-plus plus-event" aria-hidden="true">
-                              <span class="tooltiptext">
-                                From Dragon Ball Z to Naruto , it was the Anime shows that made our childhood worthwhile.
-                                Think you're the biggest anime freak out there? Come , participate and meet your kind(of
-                                people).
-                              </span>
-                            </i>
+                            <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal15" aria-hidden="true"></i>
 
 
+                          </p>
 
-                  </p>
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+  											</div>
+  											<div class="label-bg"></div>
+  										</div>
+  									</div>
+  								</div>
+
+                  <!--modal-->
+                    <div class="modal" id="myModal15">
+                      <div class="modal-dialog">
+                        <div class="modal-content" style="border-radius:0!important">
+
+                          <!-- Modal Header -->
+                          <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Animania</h4>
+                          </div>
+
+                          <!-- Modal body -->
+                          <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                            <img src="events/images/anime.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                            From Dragon Ball Z to Naruto , it was the Anime shows that made our childhood worthwhile.
+                            Think you're the biggest anime freak out there? Come , participate and meet your kind(of
+                            people).
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <!--modal-->
 
               <div class="portfolio informal all"  data-cat="informal">
 									<div class="portfolio-wrapper">
@@ -543,24 +792,39 @@ $(function () {
 									<span class="text-category">Informal</span>
                   <p class="text">
 
-
-                              <i class="fa fa-plus plus-event" aria-hidden="true">
-                                <span class="tooltiptext">
-                                  Amazing hand-eye coordination, sharp and fast thinking, and a zest to win are prerequisites
-                                  for this reboot of A Minute to Win It. No time to ponder and no time to panic. Juggle, run, sing,
-                                  speak, dance, jump. The condition is, you’ve merely got a minute to win it!
-                                </span>
-                              </i>
+                              <i class="fa fa-plus plus-event" data-toggle="modal" data-target="#myModal16" aria-hidden="true"></i>
 
 
+                            </p>
 
+    											</div>
+    											<div class="label-bg"></div>
+    										</div>
+    									</div>
+    								</div>
 
-                  </p>
-									</div>
-								<div class="label-bg"></div>
-								</div>
-								</div>
-							</div>
+                    <!--modal-->
+                      <div class="modal" id="myModal16">
+                        <div class="modal-dialog">
+                          <div class="modal-content" style="border-radius:0!important">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header" style="display: block!important">
+  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title" style="font-family: 'Varela Round', sans-serif;color: #1818e1">Just A Minute</h4>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body" style="font-family: 'Varela Round', sans-serif;color: black">
+                              <img src="events/images/jam.jpg" style="width: 100%" onclick="void(0)" alt="" />
+                              Amazing hand-eye coordination, sharp and fast thinking, and a zest to win are prerequisites
+                              for this reboot of A Minute to Win It. No time to ponder and no time to panic. Juggle, run, sing,
+                              speak, dance, jump. The condition is, you’ve merely got a minute to win it!
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--modal-->
 
 
 
@@ -602,7 +866,7 @@ $(function () {
                     <ul class="flex flex-wrap justify-content-center align-items-center">
                         <li><a href="/">Home</a></li>
                         <li><a href="/comingsoon.html">Proshows</a></li>
-                        <li><a href="https://drive.google.com/file/d/12Am-pLq-a10RYhNLxnS-sszx2p5SLwXk/view?ts=5b9bea8b" target="_blank">Events</a></li>
+                        <li><a href="./events.html" target="_blank">Events</a></li>
                         <li><a href="/comingsoon.html">Sponsors</a></li>
                         <li><a href="/contact.html">Contact</a></li>
                     </ul>
@@ -631,6 +895,7 @@ $(function () {
 </div>
 
 <script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
 <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
 <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
 <script type='text/javascript' src='js/swiper.min.js'></script>
