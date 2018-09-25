@@ -812,12 +812,13 @@ a:hover, a:active {
 
 .homepage-next-events .next-event-wrap figure img {
     width: 100%;
-    height: 20vw;
+    height: 100%;
+    border-radius: 25%;
 }
 
 
 
-@media screen and (max-width: 760px) {
+/* @media screen and (max-width: 760px) {
     .homepage-next-events .next-event-wrap figure img {
         width: 100%;
         height: 40vw;
@@ -829,7 +830,7 @@ a:hover, a:active {
         width: 100%;
         height: 80vw;
     }
-}
+} */
 
 .homepage-next-events .next-event-wrap .event-rating {
     display: flex;
