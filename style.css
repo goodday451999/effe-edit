@@ -803,7 +803,23 @@ a:hover, a:active {
 
 .homepage-next-events .next-event-wrap figure img {
     width: 100%;
-    height: 100%;
+    height: 20vw;
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .homepage-next-events .next-event-wrap figure img {
+        width: 100%;
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .homepage-next-events .next-event-wrap figure img {
+        width: 100%;
+        height: 80vw;
+    }
 }
 
 .homepage-next-events .next-event-wrap .event-rating {
