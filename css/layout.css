@@ -72,9 +72,10 @@ body{
 
 	  #filters li span {
 		  display: block;
-		  width: 132px;
+		  width: 232px;
+		  height: 100px;
 		  padding :20px;
-		  margin: 8px;
+		  margin: 40px;
 		  text-decoration:none;
 		  cursor: pointer;
 		  background: #fff;
@@ -84,6 +85,12 @@ body{
 		  min-width: 6em;
 		  margin-bottom: 1vh;
 		 }
+
+		.filter-text{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 
 	  #filters li span.active {
 		  background:#87345a;
@@ -117,6 +124,7 @@ body{
 		  height: 350px;
 		  position: relative;
 		  top:0;
+		  overflow: hidden;
 	  -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 	  transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 	  }
@@ -175,6 +183,7 @@ body{
 		-webkit-filter: blur(2px);
 		filter: blur(2px);
 	  top:-30px;
+		scale: 
 	  cursor: pointer;
 	}
 	.table {
@@ -185,6 +194,7 @@ body{
 	  /* Hover effect */
 	.image {
 		position:relative;
+		overflow: hidden;
 
 	}
 	.image img {
@@ -291,9 +301,11 @@ body{
 		cursor:pointer;
 	}
 	.table{
-		display: none;
+		/* display: none;
 		visibility: hidden;
-		cursor: pointer;
+		cursor: pointer; */
+		position: relative;
+		left: -50%;
 	}
 	#span {
 		display: block;

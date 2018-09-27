@@ -2250,3 +2250,7 @@ ul.tabs-nav .tab-nav.active {
     padding: 16px 32px;
     font-weight: 600;
   }
+
+.table{
+    margin-bottom: 50vh;
+}
