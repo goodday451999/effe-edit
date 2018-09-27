@@ -2220,6 +2220,10 @@ ul.tabs-nav .tab-nav.active {
     backface-visibility: hidden;
   }
 
+.image img{
+    border-radius: 50%;
+}
+
   .middle {
     transition: .5s ease;
     opacity: 0;
