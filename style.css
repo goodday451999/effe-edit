@@ -35,8 +35,7 @@
 
 body {
     color: #2f2f2f;
-    font-family: 'Calibri';
-    cursor: url("./images/cursor.png"), auto;
+    font-family: 'Calibri';    
 }
 
 img {
