@@ -426,6 +426,53 @@ body{
     .modal {
       top: 10%!important;
     }
+
+    .image-app {
+      width: 100%!important;
+    }
+
+    .content-app {
+      width: 100%!important;
+    }
+
+    .modal-body {
+      display: block!important;
+    }
+
+    .modal-dialog {
+      max-width: 100%!important;
+    }
+  }
+
+  .modal-content {
+    background: #fff;
+  }
+
+  .modal-header {
+    border-bottom: 0!important;
+  }
+
+  .modal {
+    background: rgba(0,0,128,.4)!important;
+  }
+
+  .modal-body {
+    padding: 0!important;
+  }
+
+  .image-app {
+    width: 50%;
+  }
+
+  .content-app {
+    width: 50%;
+    display: block
+  }
+
+  .modal-dialog {
+    max-width: 90%!important;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .logo{
