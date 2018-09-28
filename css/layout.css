@@ -475,6 +475,10 @@ body{
     margin-right: auto;
   }
 
+  .fade {
+    opacity: 0;
+    transition: opacity .15s cubic-bezier(0.4, 0, 1, 1)!important;
+}
   .logo{
 	  height: 40%;
 	  /* width: 20%; */
