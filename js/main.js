@@ -1,3 +1,4 @@
+console.log("Hello");
 document.querySelector('.img-footloose').addEventListener("click",function () { 
     console.log("Hello");
     window.location.href = "events.html";
