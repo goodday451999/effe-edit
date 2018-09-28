@@ -2254,3 +2254,10 @@ ul.tabs-nav .tab-nav.active {
 .table{
     margin-bottom: 50vh;
 }
+
+.custom-margin{
+    margin-top: 8em;
+}
+.custom-margin1{
+    margin-top: 12em;
+}
