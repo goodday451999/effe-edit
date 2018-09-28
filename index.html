@@ -215,12 +215,25 @@
       }
     }
 
-    #effe_logo {
+    #effe_logo1 {
+        /* overflow-x:hidden;
+        display:block;
+        vertical-align: middle;
+        margin-left: 20vw;
+        margin-right: auto; */
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+     #effe_logo2 {
         overflow-x:hidden;
         display:block;
         vertical-align: middle;
         margin-left: 20vw;
         margin-right: auto;
+        visibility: hidden;
     }
     /* style="overflow-x:hidden;display:block;vertical-align: middle;margin-left: 20vw;margin-right: auto;" */
     @media (min-width: 320px) and (max-width:768px){
@@ -437,7 +450,13 @@
 
 
 <div class="homepage-next-events" id="screen1">
-  <img id="effe_logo"  src="images/effe/header1.png">
+  <img id="effe_logo1"  src="images/effe/header1.png"
+  data--0p-top = "right: 50%; top: 50%; height: 80%"  
+  data--60p-top = "right: 10%; top: 10%; height: 20%"
+  data-anchor-target="#screen1"
+  >
+  <img id="effe_logo2" style="visibilty: hidden"  src="images/effe/header1.png"
+  >
   <div class="col-lg-2 d-none d-lg-block order-2 order-lg-3">
       <div class="buy-tickets">
           <a class="btn gradient-bg" href="https://www.thecollegefever.com/events/effervescence18">Register</a>
@@ -469,10 +488,10 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-12">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/effe/sunidhi.jpg" alt="1"></a>
+                        <a href="#"><img src="images/effe/sunidhi_poster.jpg" alt="1"></a>
                         <div class="name"><h2 style="color:white;" class="entry-title">Sunidhi Chauhan</h2></div>
                         <!-- <div class="event-rating">Celeb</div> -->
                     </figure>
@@ -492,8 +511,12 @@
                     </footer> -->
                 </div>
             </div>
+        </div>
 
-            <div class="col-12 col-sm-6 col-md-4">
+        <div class="row">
+
+
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="next-event-wrap">
                     <figure>
                         <a href="#"><img src="images/effe/akash.jpg" alt="1"></a>
@@ -510,7 +533,7 @@
 
                     <div class="entry-content">
                         <p>Effervescence brings to you the Humour Night-The biggest Night of the carnival!
-                            We will witness Aakash Gupta taking over the stage and making audience burst into fits of laughter!
+                            We will witness <b>Aakash Gupta</b> taking over the stage and making audience burst into fits of laughter!
                         </p>
                     </div>
 
@@ -520,10 +543,10 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/question-mark.jpg" alt="1"></a>
+                        <a href="#"><img src="images/edm.jpg" alt="1"></a>
 
                         <!-- <div class="event-rating">EDM
                         </div> -->
@@ -537,7 +560,7 @@
 
                     <div class="entry-content">
                         <p>Effervescence presents the star studded affair, the one with it’s own flavour and identity- the EDM Night.
-                            Last year's international performer 'Club Banditz' made everyone groove to their sick beats.Well let's see who takes over the mantle this year.
+                            Previous year's performers like 'SunBurn' and 'Club Banditz' made everyone groove to their sick beats.Well let's see who takes over the mantle this year.
                         </p>
                     </div>
 
@@ -546,14 +569,12 @@
                     </footer> -->
                 </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-2">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
+
+
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/question-mark.jpg" alt="1"></a>
+                        <a href="#"><img src="images/kavyom.jpg" alt="1"></a>
 
                         <!-- <div class="event-rating">Humour</div> -->
                     </figure>
@@ -574,10 +595,10 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-sm-6 col-md-3">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/question-mark.jpg" alt="1"></a>
+                        <a href="#"><img src="images/rocknight.jpg" alt="1"></a>
 
                         <!-- <div class="event-rating">Humour</div> -->
                     </figure>
@@ -589,7 +610,7 @@
                     </header>
 
                     <div class="entry-content">
-                        <p>The standard has been set high with Lagori performing in the previous edition and bigger and better can surely be expected in this edition.</p>
+                        <p>The standard has been set high with Lagori and The Local Train performing in the previous editions and bigger and better can surely be expected in this edition.</p>
                     </div>
 
                     <!-- <footer class="entry-footer">
@@ -597,7 +618,8 @@
                     </footer> -->
                 </div>
             </div>
-        </div>
+
+          </div>
     </div>
 </div>
 <div id="events" class="homepage-regional-events">
@@ -618,9 +640,9 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/dance.jpg" alt="">
+                                <img src="images/effe/dance.jpg"  alt="">
 
-                                <a class="event-overlay-link flex justify-content-center align-items-center" href="footloose.html">+</a>
+                                <div class="event-overlay-link flex justify-content-center align-items-center img-footloose">+</div>
                             </figure><!-- .hero-image -->
 
                             <div class="entry-header">
@@ -634,7 +656,7 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/bindass.jpg" alt="">
+                                <img src="images/effe/bindass.jpg" class="img-bindass" alt="">
 
                                 <a class="event-overlay-link flex justify-content-center align-items-center" href="bindassbol.html">+</a>
                             </figure><!-- .hero-image -->
@@ -650,7 +672,7 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/football.jpg" alt="">
+                                <img src="images/effe/football.jpg" class="img-futsal" alt="">
 
                                 <a class="event-overlay-link flex justify-content-center align-items-center" href="futsal.html">+</a>
                             </figure><!-- .hero-image -->
@@ -666,7 +688,7 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/alamode.jpg" alt="">
+                                <img src="images/effe/alamode.jpg" class="img-alamode" alt="">
 
                                 <a class="event-overlay-link flex justify-content-center align-items-center" href="alamode.html">+</a>
                             </figure><!-- .hero-image -->
@@ -682,7 +704,7 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/music.jpg" alt="">
+                                <img src="images/effe/music.jpg" class="img-incendiary" alt="">
 
                                 <a class="event-overlay-link flex justify-content-center align-items-center" href="incendiary.html">+</a>
                             </figure><!-- .hero-image -->
@@ -698,7 +720,7 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/innovation.jpg" height="330em" alt="">
+                                <img src="images/effe/innovation.jpg" class="img-innovation" height="330em" alt="">
 
                                 <a class="event-overlay-link flex justify-content-center align-items-center" href="innovation.html">+</a>
                             </figure><!-- .hero-image -->
@@ -737,21 +759,18 @@
                     <div class="events-partners-logos flex flex-wrap justify-content-between align-items-center">
 
                       <div class="event-partner-logo">
-                          <a href="#"><img src="images/sponsors/fastrack.png" height="150em" widht="150em" alt=""></a>
+                          <a href="https://www.fastrack.in/" target="_blank"><img src="images/sponsors/fastrack.png" height="120em" widht="120em" alt=""></a>
                       </div>
 
                         <div class="event-partner-logo">
-                            <a href="#"><img src="images/sponsors/bingo.gif" height="150em" widht="150em" alt=""></a>
+                            <a href="https://www.bingo.com/" target="_blank"><img src="images/sponsors/bingo.gif" height="150em" widht="150em" alt=""></a>
                         </div>
-
-
-
                         <div class="event-partner-logo">
-                            <a href="#"><img src="images/sponsors/gaana.jpg" height="150em" widht="150em" alt=""></a>
+                            <a href="https://gaana.com" target="_blank"><img src="images/sponsors/gaana-logo.png" height="100em" widht="80em" alt=""></a>
                         </div>
 
                         <div class="event-partner-logo">
-                            <a href="#"><img src="images/sponsors/amul.png" height="150em" widht="150em" alt=""></a>
+                            <a href="https://amul.com" target="_blank"><img src="images/sponsors/amul.png" height="150em" widht="150em" alt=""></a>
                         </div>
 
 
@@ -801,7 +820,7 @@
                 </div>
 
                 <footer class="entry-footer" style="text-align: center">
-                    <a href="/contact.html" class="btn gradient-bg">Contact us</a>
+                    <a href="contact.html" class="btn gradient-bg">Contact us</a>
                     <a href="https://www.thecollegefever.com/events/effervescence18" class="btn dark">Register Now</a>
                 </footer>
             </div>
@@ -926,6 +945,13 @@ window.onload = function() {
 </script>
 
 <script type='text/javascript' src='js/custom.js'></script>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/vendor/skrollr.js"></script>
+        <script type="text/javascript">
+            var s = skrollr.init();
+        </script>
 
 </body>
 </html>
