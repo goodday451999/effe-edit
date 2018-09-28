@@ -72,7 +72,7 @@ body{
 
 	  #filters li span {
 		  display: block;
-		  width: 232px;
+		  width: 180px;
 		  height: 100px;
 		  padding :20px;
 		  margin: 40px;
@@ -511,15 +511,15 @@ body{
   }
 
   .modal_eventcontent {
-    width: 75%;
+    width: 100%;
     text-align: -webkit-auto;
-    padding-left: 20px;
+    padding: 20px;
     font-size: 19px;
   }
 
   .modal_eventinfo {
-    width: 25%;
-    float: right;
+    width: 100%;
+    float: inherit;
     padding-right: inherit;
     position: relative;
     bottom: 0;
