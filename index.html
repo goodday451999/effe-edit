@@ -219,7 +219,7 @@
         overflow-x:hidden;
         display:block;
         vertical-align: middle;
-        padding-left: 20vw;
+        margin-left: 20vw;
         margin-right: auto;
     }
     /* style="overflow-x:hidden;display:block;vertical-align: middle;margin-left: 20vw;margin-right: auto;" */
@@ -260,7 +260,7 @@
     }
     @media (max-width: 1250px) {
         #screen1 {
-            height:670px;
+            height:650px;
             background: url('images/effe/bg_extra5.jpg');
             background-repeat: no-repeat;
             background-size: cover;
@@ -295,6 +295,34 @@
             align-items: center;
         }
     }
+
+    .next-event-wrap:hover figure img{
+      -webkit-transform: scale(1.08);
+      transform: scale(1.08);
+      -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+      filter: blur(5px);
+      opacity:1;
+
+    }
+
+
+
+    .name{
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .next-event-wrap:hover .name{
+      opacity:1;
+      font-family: 'Courier New';
+    }
+
 
   </style>
     <style>
@@ -444,8 +472,8 @@
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/sunidhi2.jpg" alt="1"></a>
-
+                        <a href="#"><img src="images/effe/sunidhi.jpg" alt="1"></a>
+                        <div class="name"><h2 style="color:white;" class="entry-title">Sunidhi Chauhan</h2></div>
                         <!-- <div class="event-rating">Celeb</div> -->
                     </figure>
 
@@ -468,7 +496,8 @@
             <div class="col-12 col-sm-6 col-md-4">
                 <div class="next-event-wrap">
                     <figure>
-                        <a href="#"><img src="images/question-mark.jpg" alt="1"></a>
+                        <a href="#"><img src="images/effe/akash.jpg" alt="1"></a>
+                        <div class="name"><h2 style="color:white;" class="entry-title">Aakash Gupta</h2></div>
 
                         <!-- <div class="event-rating">Humour</div> -->
                     </figure>
@@ -554,7 +583,7 @@
                     </figure>
 
                     <header class="entry-header">
-                        <h3 class="entry-title">Lagori</h3>
+                        <h3 class="entry-title">Rock Night</h3>
 
                         <!-- <div class="posted-date">Saturday <span>Jan 27, 2018</span></div> -->
                     </header>
