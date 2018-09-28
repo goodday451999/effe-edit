@@ -227,6 +227,18 @@
         transform: translate(50%, -50%);
     }
 
+    #effe_logo3 {
+        /* overflow-x:hidden;
+        display:block;
+        vertical-align: middle;
+        margin-left: 20vw;
+        margin-right: auto; */
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
     @media (max-width:768px){
       #effe_logo1 {
           position: relative;
@@ -237,7 +249,19 @@
           right: 50%; */
           /* transform: translate(50%, -50%); */
           height: 40%;
+          display: none;
       }
+
+      #effe_logo3 {
+        position: relative;
+          top: 0%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          /* top: 50%;
+          right: 50%; */
+          /* transform: translate(50%, -50%); */
+          height: 40%;
+    }
     }
 
      #effe_logo2 {
@@ -469,7 +493,7 @@
   data-anchor-target="#screen1"
   >
 
-  <img id="effe_logo1"  src="images/effe/header1.png"
+  <img id="effe_logo3"  src="images/effe/header1.png"
   data--0p-top = "right: 50%; top: 50%; height: 80%; opacity:1"
   data--80p-top = "right: 10%; top: 10%; height: 20%; opacity: 0"
   data-anchor-target="#screen1"
