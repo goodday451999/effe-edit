@@ -215,14 +215,32 @@
       }
     }
 
+    #effe_logo {
+        overflow-x:hidden;
+        display:block;
+        vertical-align: middle;
+        margin-left: 20vw;
+        margin-right: auto;
+    }
+    /* style="overflow-x:hidden;display:block;vertical-align: middle;margin-left: 20vw;margin-right: auto;" */
+    @media (min-width: 320px) and (max-width:768px){
+        #effe_logo {
+            overflow-x:hidden;
+            display:block;
+            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     @media (min-width: 1250px) {
         #screen1 {
-            background: url('images/effe/bg_new.jpg');
+            background: url('images/effe/bg_new3.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
-    justify-content: center;
-    align-items: center;
+            justify-content: center;
+            align-items: center;
         }
     }
     @media (min-width: 1250px) {
@@ -241,12 +259,12 @@
     }
     @media (max-width: 1250px) {
         #screen1 {
-            background: url('images/effe/bg_new.jpg');
+            background: url('images/effe/bg_new3.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             display: flex;
-    justify-content: center;
-    align-items: center;
+            justify-content: center;
+            align-items: center;
         }
     }
     @media (max-width: 1250px) {
@@ -278,6 +296,19 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
     <script>
+    $(document).ready(function() {
+    var movementStrength = 25;
+    var height = movementStrength / $(window).height();
+    var width = movementStrength / $(window).width();
+    $("#top-image").mousemove(function(e){
+              var pageX = e.pageX - ($(window).width() / 2);
+              var pageY = e.pageY - ($(window).height() / 2);
+              var newvalueX = width * pageX * -1 - 25;
+              var newvalueY = height * pageY * -1 - 50;
+              $('#top-image').css("background-position", newvalueX+"px     "+newvalueY+"px");
+    });
+    });
+
     $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
@@ -329,7 +360,7 @@
             <div class="row align-items-center">
 
 
-                <div class="col-2 col-lg-7 order-lg-2">
+                <div class="col-2 col-lg-6 order-lg-2">
                     <nav class="site-navigation">
                         <div class="hamburger-menu d-lg-none">
                             <span></span>
@@ -350,11 +381,9 @@
                 <div class="col-lg-2 d-none d-lg-block order-2 order-lg-2">
 
                 </div>
-                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
-                    <div class="buy-tickets">
-                        <a class="btn gradient-bg" href="https://www.thecollegefever.com/events/effervescence18">Register</a>
-                    </div><!-- .buy-tickets -->
-                </div><!-- .col -->
+
+
+
 
             </div><!-- .row -->
         </div><!-- .container-fluid -->
@@ -366,7 +395,23 @@
 
 
 <div style="height:850px;" class="homepage-next-events" id="screen1">
-  <img style="display: block;vertical-align: middle;margin-left: auto;margin-right: auto;" src="images/effe/header.png">
+  <img id="effe_logo"  src="images/effe/header1.png">
+  <div class="col-lg-2 d-none d-lg-block order-2 order-lg-3">
+      <div class="buy-tickets">
+          <a class="btn gradient-bg" href="https://www.thecollegefever.com/events/effervescence18">Register</a>
+      </div><!-- .buy-tickets -->
+      <br/>
+      <div class="buy-tickets">
+          <a class="btn gradient-bg" href="/events.html">Events&nbsp;&nbsp;</a>
+      </div>
+      <br/>
+      <div class="buy-tickets">
+          <a class="btn gradient-bg" href="ca.effe.org.in">&nbsp;&nbsp;&nbsp;&nbsp;CA&nbsp;&nbsp;&nbsp;&nbsp;</a>
+      </div>
+
+  </div><!-- .col -->
+
+
 </div>
 
 <div style="height:350px;" class="homepage-next-events" id="screen2">
@@ -647,13 +692,16 @@
                     </header>
 
                     <div class="events-partners-logos flex flex-wrap justify-content-between align-items-center">
-                        <div class="event-partner-logo">
-                            <a href="#"><img src="images/sponsors/znet.png" height="90em" widht="90em" alt=""></a>
-                        </div>
+
+                      <div class="event-partner-logo">
+                          <a href="#"><img src="images/sponsors/fastrack.png" height="150em" widht="150em" alt=""></a>
+                      </div>
 
                         <div class="event-partner-logo">
-                            <a href="#"><img src="images/sponsors/zoutons.png" height="150em" widht="150em" alt=""></a>
+                            <a href="#"><img src="images/sponsors/bingo.gif" height="150em" widht="150em" alt=""></a>
                         </div>
+
+
 
                         <div class="event-partner-logo">
                             <a href="#"><img src="images/sponsors/gaana.jpg" height="150em" widht="150em" alt=""></a>
