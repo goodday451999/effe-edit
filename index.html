@@ -979,12 +979,17 @@ window.onload = function() {
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/vendor/skrollr.js"></script>
         <script type="text/javascript">
+
+        if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+skrollr.init({
+forceHeight: false
+});
+}
             // var s = skrollr.init();
-            $(function () {
-  // initialize skrollr if the window width is large enough
-  if ($(window).width() > 767) {
-    skrollr.init();
-  }
+//             $(function () {
+//   if ($(window).width() > 767) {
+//     skrollr.init();
+//   }
 
   // disable skrollr if the window is resized below 768px wide
 //   $(window).on('resize', function () {
