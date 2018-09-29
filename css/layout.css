@@ -452,6 +452,8 @@ body{
 			width: 100%!important;
 			max-width: 500px;
 			max-height: 400px;
+			margin: auto!important;
+
     }
 
     .content-app {
