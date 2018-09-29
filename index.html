@@ -227,6 +227,43 @@
         transform: translate(50%, -50%);
     }
 
+    #effe_logo3 {
+        /* overflow-x:hidden;
+        display:block;
+        vertical-align: middle;
+        margin-left: 20vw;
+        margin-right: auto; */
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+    @media (max-width:768px){
+      #effe_logo1 {
+          position: relative;
+          top: 0%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          /* top: 50%;
+          right: 50%; */
+          /* transform: translate(50%, -50%); */
+          height: 40%;
+          display: none;
+      }
+
+      #effe_logo3 {
+        position: relative;
+          top: 0%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          /* top: 50%;
+          right: 50%; */
+          /* transform: translate(50%, -50%); */
+          height: 40%;
+    }
+    }
+
      #effe_logo2 {
         overflow-x:hidden;
         display:block;
@@ -449,17 +486,23 @@
 </header><!-- .site-header -->
 
 
-<div class="homepage-next-events" id="screen1">
-  <img id="effe_logo1"  src="images/effe/header1.png"
-  data--0p-top = "right: 50%; top: 50%; height: 80%"
-  data--60p-top = "right: 10%; top: 10%; height: 20%"
+<div class="homepage-next-events" id="screen1" id="skrollr-body">
+  <img id="effe_logo1"  src="images/effe/header.png"
+  data--0p-top = "right: 50%; top: 50%; height: 80%; opacity:0"
+  data--80p-top = "right: 10%; top: 10%; height: 20%; opacity: 1"
+  data-anchor-target="#screen1"
+  >
+
+  <img id="effe_logo3"  src="images/effe/header1.png"
+  data--0p-top = "right: 50%; top: 50%; height: 80%; opacity:1"
+  data--80p-top = "right: 10%; top: 10%; height: 20%; opacity: 0"
   data-anchor-target="#screen1"
   >
   <img id="effe_logo2" style="visibilty: hidden"  src="images/effe/header1.png"
   >
   <div class="col-lg-2 d-none d-lg-block order-2 order-lg-3">
       <div class="buy-tickets">
-          <a class="btn gradient-bg" href="https://www.thecollegefever.com/events/effervescence18">Register</a>
+          <a class="btn gradient-bg" href="https://www.thecollegefever.com/events/effervescence18" target="_blank">Register</a>
       </div><!-- .buy-tickets -->
       <br/>
       <div class="buy-tickets">
@@ -586,7 +629,7 @@
                     </header>
 
                     <div class="entry-content">
-                        <p>Kavyom brings with it the infinite sky of poetry.The night which marks the enigma of Effervescence.The one that lets the audience relish and get lost in the words of imagination with some amazing notable poets of the nation.It gets the beholders being mesmerised in the poetic evening which is gripped with romanticism and flavoured with wit of some world famous poetry.</p>
+                        <p>Kavyom brings with it the infinite sky of poetry.The night which marks the enigma of Effervescence.</p>
                     </div>
 
                     <!-- <footer class="entry-footer">
@@ -640,7 +683,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/dance.jpg" class="img-footloose" alt="">
+                                <a href="footloose.html"><img src="images/effe/dance.jpg" class="img-footloose" alt=""></a>
 
                                 <!-- <div class="event-overlay-link flex justify-content-center align-items-center img-footloose">+</div> -->
                             </figure><!-- .hero-image -->
@@ -656,9 +699,9 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/bindass.jpg" class="img-bindass" alt="">
+                                <a href="bindassbol.html"><img src="images/effe/bindass.jpg" class="img-bindass" alt=""></a>
 
-                                <a class="event-overlay-link flex justify-content-center align-items-center" href="bindassbol.html">+</a>
+                                <!-- <a class="event-overlay-link flex justify-content-center align-items-center" href="bindassbol.html">+</a> -->
                             </figure><!-- .hero-image -->
 
                             <div class="entry-header">
@@ -670,27 +713,13 @@
                             </div><!-- .entry-footer" -->
                         </div><!-- .swiper-slide -->
 
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="images/effe/football.jpg" class="img-futsal" alt="">
 
-                                <a class="event-overlay-link flex justify-content-center align-items-center" href="futsal.html">+</a>
-                            </figure><!-- .hero-image -->
-
-                            <div class="entry-header">
-                                <h2 class="entry-title">Futsal</h2>
-                            </div><!--- .entry-header -->
-
-                            <!-- <div class="entry-footer">
-                                <div class="posted-date">Saturday <span>Jan 27, 2018</span></div>
-                            </div><!-- .entry-footer" -->
-                        </div><!-- .swiper-slide -->
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/alamode.jpg" class="img-alamode" alt="">
+                                <a href="alamode.html"><img src="images/effe/alamode.jpg" class="img-alamode" alt=""></a>
 
-                                <a class="event-overlay-link flex justify-content-center align-items-center" href="alamode.html">+</a>
+                                <!-- <a class="event-overlay-link flex justify-content-center align-items-center" href="alamode.html">+</a> -->
                             </figure><!-- .hero-image -->
 
                             <div class="entry-header">
@@ -704,9 +733,9 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/music.jpg" class="img-incendiary" alt="">
+                                <a href="incendiary.html"><img src="images/effe/music.jpg" class="img-incendiary" alt=""></a>
 
-                                <a class="event-overlay-link flex justify-content-center align-items-center" href="incendiary.html">+</a>
+                                <!-- <a class="event-overlay-link flex justify-content-center align-items-center" href="incendiary.html">+</a> -->
                             </figure><!-- .hero-image -->
 
                             <div class="entry-header">
@@ -720,9 +749,9 @@
 
                         <div class="swiper-slide">
                             <figure>
-                                <img src="images/effe/innovation.jpg" class="img-innovation" height="330em" alt="">
+                                <a href="innovation.html"><img src="images/effe/innovation.jpg" class="img-innovation" height="330em" alt=""></a>
 
-                                <a class="event-overlay-link flex justify-content-center align-items-center" href="innovation.html">+</a>
+                                <!-- <a class="event-overlay-link flex justify-content-center align-items-center" href="innovation.html">+</a> -->
                             </figure><!-- .hero-image -->
 
                             <div class="entry-header">
@@ -759,11 +788,11 @@
                     <div class="events-partners-logos flex flex-wrap justify-content-between align-items-center">
 
                       <div class="event-partner-logo">
-                          <a href="https://www.fastrack.in/" target="_blank"><img src="images/sponsors/fastrack.png" height="120em" widht="120em" alt=""></a>
+                          <a href="https://www.fastrack.in/" target="_blank"><img src="Logos/fastrack.png" height="120em" widht="120em" alt=""></a>
                       </div>
 
                         <div class="event-partner-logo">
-                            <a href="https://www.bingo.com/" target="_blank"><img src="images/sponsors/bingo.gif" height="150em" widht="150em" alt=""></a>
+                            <a href="https://www.bingo.com/" target="_blank"><img src="Logos/bingo.png" height="150em" widht="150em" alt=""></a>
                         </div>
                         <div class="event-partner-logo">
                             <a href="https://gaana.com" target="_blank"><img src="images/sponsors/gaana-logo.png" height="100em" widht="80em" alt=""></a>
@@ -950,7 +979,20 @@ window.onload = function() {
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/vendor/skrollr.js"></script>
         <script type="text/javascript">
-            var s = skrollr.init();
+            // var s = skrollr.init();
+            $(function () {
+  // initialize skrollr if the window width is large enough
+  if ($(window).width() > 767) {
+    skrollr.init();
+  }
+
+  // disable skrollr if the window is resized below 768px wide
+  $(window).on('resize', function () {
+    if ($(window).width() <= 767) {
+      skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+    }
+  });
+});
         </script>
 
 </body>

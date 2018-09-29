@@ -231,27 +231,28 @@ body{
   /* Hover effect end */
   /*******************************Scrollbar ***********************************/
   /* width */
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 7px;
-}
+  }
 
-/* Track */
-::-webkit-scrollbar-track {
+  /* Track */
+  ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
-}
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(330deg, #5D009C ,#D40062, #FCB600); ;
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(330deg, #0066ff, #693ba8, #5d1f5e); ;
     border-radius: 10px;
-}
+  }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background:linear-gradient(330deg, #5D009C ,#D40062, #FCB600); ;
-}
-/***********************************Scrollbar end*****************************/
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(330deg, #0066ff, #693ba8, #5d1f5e); ;
+  }
+  /***********************************Scrollbar end*****************************/
+
   /* #Tablet (Portrait) */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
 	  .container {
