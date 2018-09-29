@@ -309,8 +309,19 @@ body{
 		visibility: hidden;
 		cursor: pointer; */
 		position: relative;
-		left: -50%;
+		left: -15%!important;
+		margin: 0!important;
 	}
+
+	.filters {
+		margin: 0!important;
+	}
+
+	.filter {
+		margin: 0 0 40px 0!important;
+		width: 180px!important;
+	}
+
 	#span {
 		display: block;
 	}
@@ -350,6 +361,11 @@ body{
 	.back{
 		display: none;
 	}
+
+	#filters li span {
+		margin: auto!important;
+	}
+
   }
 
         /* Footer Start */
@@ -535,4 +551,6 @@ body{
     margin-right: 20px;
     padding: 20px;
     font-size: 17px;
-  }
+	}
+	
+
