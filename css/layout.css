@@ -72,7 +72,8 @@ body{
 
 	  #filters li span {
 		  display: block;
-		  width: 180px;
+			width: 180px;
+			border-radius: 60px!important;
 		  height: 100px;
 		  padding :20px;
 		  margin: 40px;
@@ -448,7 +449,9 @@ body{
     }
 
     .image-app {
-      width: 100%!important;
+			width: 100%!important;
+			max-width: 500px;
+			max-height: 400px;
     }
 
     .content-app {
@@ -483,6 +486,13 @@ body{
       font-size: 17px!important;
     }
 
+		img.modal_image {
+			min-width: auto!important;
+			min-height: auto!important;
+			max-height: 400px!important;
+			max-width: 400px!important;
+			padding-top: 0!important;
+		}
   }
 
   .modal-content {
@@ -502,7 +512,9 @@ body{
   }
 
   .image-app {
-    width: 50%;
+		width: 50%;
+		max-width: 500px;
+		max-height: 400px;
   }
 
   .content-app {
@@ -553,5 +565,11 @@ body{
     padding: 20px;
     font-size: 17px;
 	}
-	
-
+	/*modal size making almost constant*/
+	img.modal_image {
+		padding-top: 30px;
+    min-height: -webkit-fill-available;
+    min-width: -webkit-fill-available;
+    max-width: 500px;
+    max-height: 400px;
+	}
