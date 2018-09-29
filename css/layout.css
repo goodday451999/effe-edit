@@ -72,7 +72,8 @@ body{
 
 	  #filters li span {
 		  display: block;
-		  width: 180px;
+			width: 180px;
+			border-radius: 60px!important;
 		  height: 100px;
 		  padding :20px;
 		  margin: 40px;
@@ -310,8 +311,19 @@ body{
 		visibility: hidden;
 		cursor: pointer; */
 		position: relative;
-		left: -50%;
+		left: -15%!important;
+		margin: 0!important;
 	}
+
+	.filters {
+		margin: 0!important;
+	}
+
+	.filter {
+		margin: 0 0 40px 0!important;
+		width: 180px!important;
+	}
+
 	#span {
 		display: block;
 	}
@@ -351,6 +363,11 @@ body{
 	.back{
 		display: none;
 	}
+
+	#filters li span {
+		margin: auto!important;
+	}
+
   }
 
         /* Footer Start */
@@ -432,7 +449,9 @@ body{
     }
 
     .image-app {
-      width: 100%!important;
+			width: 100%!important;
+			max-width: 500px;
+			max-height: 400px;
     }
 
     .content-app {
@@ -467,6 +486,13 @@ body{
       font-size: 17px!important;
     }
 
+		img.modal_image {
+			min-width: auto!important;
+			min-height: auto!important;
+			max-height: 400px!important;
+			max-width: 400px!important;
+			padding-top: 0!important;
+		}
   }
 
   .modal-content {
@@ -486,7 +512,9 @@ body{
   }
 
   .image-app {
-    width: 50%;
+		width: 50%;
+		max-width: 500px;
+		max-height: 400px;
   }
 
   .content-app {
@@ -536,4 +564,12 @@ body{
     margin-right: 20px;
     padding: 20px;
     font-size: 17px;
-  }
+	}
+	/*modal size making almost constant*/
+	img.modal_image {
+		padding-top: 30px;
+    min-height: -webkit-fill-available;
+    min-width: -webkit-fill-available;
+    max-width: 500px;
+    max-height: 400px;
+	}

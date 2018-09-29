@@ -295,7 +295,7 @@ a:hover, a:active {
 
 @media screen and (min-width: 992px) {
     .site-navigation {
-        position: relative;
+        position: absolute;
         top: auto;
         right: auto;
         height: auto;
@@ -2173,7 +2173,7 @@ ul.tabs-nav .tab-nav.active {
 .footer-navigation ul,
 .footer-social ul {
     padding: 0;
-    margin: 32px 0 0;
+    margin: auto;
     list-style: none;
 }
 
