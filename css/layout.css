@@ -452,6 +452,8 @@ body{
 			width: 100%!important;
 			max-width: 500px;
 			max-height: 400px;
+			margin: auto!important;
+
     }
 
     .content-app {
@@ -487,6 +489,7 @@ body{
     }
 
 		img.modal_image {
+			padding: 10px!important;
 			min-width: auto!important;
 			min-height: auto!important;
 			max-height: 400px!important;
@@ -567,9 +570,10 @@ body{
 	}
 	/*modal size making almost constant*/
 	img.modal_image {
-		padding-top: 30px;
-    min-height: -webkit-fill-available;
-    min-width: -webkit-fill-available;
+		padding: 30px;
+    /* min-height: -webkit-fill-available; */
+    /* min-width: -webkit-fill-available; */
     max-width: 500px;
     max-height: 400px;
+    border-radius: 100%;
 	}
