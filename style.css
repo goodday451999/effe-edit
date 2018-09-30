@@ -2286,3 +2286,71 @@ ul.tabs-nav .tab-nav.active {
 .custom-margin1{
     margin-top: 12em;
 }
+
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: rgba(74, 33, 87, 0.3);
+ }
+
+ .info{
+    font-size: 20px;
+    font-weight: 500;
+ }
+
+ .title-text{
+    font-size:50px;
+    font-weight: 600;
+ }
+
+ .table-text{
+     font-size: 20px;
+ }
+
+ .sub-title{
+     font-size: 30px;
+     font-weight: 600;
+ }
+
+ .final-info{
+    font-weight: 100;
+ }
+
+ .closing-remarks{
+     font-size: 20px;
+ }
+
+ @media (max-width: 992px){
+     .info{
+         font-size: 20px;
+     }
+
+     .title-text{
+         font-size: 40px;
+     }
+ }
+
+ .table {
+    margin-bottom: 0;
+}
+
+.registration-register{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th {
+  border-top: none;
+}
+
+.flagship{
+    font-size: 25px;
+}
+
+.flagship-heading{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
